@@ -6,16 +6,16 @@ import 'VendaItem.dart';
 main() {
   List<VendaItem> vendaItens = [
     VendaItem(
-      produto: Produto(codigo: 12345, nome: "Macarrão", preco: 10, desconto: 5),
+      produto: Produto(codigo: 12345, nome: "Macarrão", preco: 10, desconto: 1),
       quantidade: 1,
     ),
     VendaItem(
       produto:
-          Produto(codigo: 54321, nome: "Vassoura", preco: 20, desconto: 10),
+          Produto(codigo: 54321, nome: "Vassoura", preco: 20, desconto: 1),
       quantidade: 1,
     ),
     VendaItem(
-      produto: Produto(codigo: 98212, nome: "Copo", preco: 50, desconto: 10),
+      produto: Produto(codigo: 98212, nome: "Copo", preco: 50, desconto: 1),
       quantidade: 1,
     ),
   ];

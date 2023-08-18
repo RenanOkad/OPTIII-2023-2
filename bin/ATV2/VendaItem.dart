@@ -7,10 +7,10 @@ class VendaItem {
   VendaItem({required this.produto, this.quantidade = 1});
 
   double get preco {
-    if (produto != null && _preco == null) {
-      this._preco = produto.precoComDesconto;
+    if (produto != null) {
+      _preco = produto.precoComDesconto;
     }
-    return this._preco;
+    return _preco;
   }
 
   set preco(double novoPreco) {

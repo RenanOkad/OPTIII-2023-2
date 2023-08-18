@@ -4,7 +4,7 @@ import 'VendaItem.dart';
 class Venda {
   Cliente cliente;
   List<VendaItem> itens;
-  Venda({required this.cliente,this.itens = const []});
+  Venda({required this.cliente, required this.itens});
 
   double get valorTotal {
     return itens
