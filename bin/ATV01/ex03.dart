@@ -1,14 +1,15 @@
 import 'dart:io';
 
 void main() {
-  print("Digite um número: ");
+  print("Digite o valor do seu salario: ");
 
   String input = stdin.readLineSync()!;
+  double salario = double.parse(input);
 
-  int numero = int.parse(input);
+  double reajuste = salario + (salario*20/100);
 
-  int antecessor = numero - 1;
+  print("Ocorrera um reajuste no seu salario de 20%");
 
-  print("O antecessor de $numero é $antecessor");
+  print("O valor do novo salario sera de $reajuste");
 }
 
